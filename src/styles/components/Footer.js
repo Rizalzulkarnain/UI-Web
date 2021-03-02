@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-import { theme } from '../root';
+import { theme, mixins } from '../root';
 
 export const HeaderMain = styled.div`
   position: sticky;
@@ -55,8 +55,7 @@ export const SiteFooter = styled.div`
   color: #fff;
   font-weight: 300;
 
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  ${mixins.gridResponsive}
   grid-gap: 2px;
   padding-right: 15px;
   padding-left: 15px;

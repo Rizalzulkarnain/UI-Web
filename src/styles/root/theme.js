@@ -6,6 +6,8 @@ const theme = {
     mainHeader: '#0c1c4a',
     emailBackground: '#208ae5',
     primary: '#007bff',
+    teal: '#32cea4',
+    gray: '#6c757d',
   },
 
   fonts: {

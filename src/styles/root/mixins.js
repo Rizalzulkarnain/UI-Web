@@ -2,6 +2,18 @@ import { css } from 'styled-components';
 import theme from './theme';
 
 const mixins = {
+  gridResponsive: css`
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  `,
+
+  backgroundCard: css`
+    background-color: #fff;
+    background-clip: border-box;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    border-radius: 3px;
+  `,
+
   gridCenter: css`
     display: grid;
     grid-template-columns: repeat(2, 1fr);

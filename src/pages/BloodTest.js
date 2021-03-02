@@ -1,6 +1,7 @@
 import MetaData from '../components/MetaData';
 import BannerCheckUp from '../components/BannerCheckUp';
 import LocationCheckup from '../components/LocationCheckup';
+import SearchLab from '../components/SearchLab';
 
 import { BloodTestPacketContainer } from '../styles';
 
@@ -12,6 +13,8 @@ const BloodTestPacket = () => {
       <LocationCheckup />
 
       <hr />
+
+      <SearchLab />
     </BloodTestPacketContainer>
   );
 };

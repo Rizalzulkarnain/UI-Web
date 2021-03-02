@@ -5,5 +5,15 @@ import Pinteres from './img-icon-pinteres.svg';
 import Twitter from './img-icon-twitter.svg';
 import Youtube from './img-icon-youtube.svg';
 import Stetoscop from './img-icon-stetoscop.svg';
+import HospitalExample from './img-hospital-example.jpg';
 
-export { Facebook, Instagram, Linkedin, Pinteres, Twitter, Youtube, Stetoscop };
+export {
+  Facebook,
+  Instagram,
+  Linkedin,
+  Pinteres,
+  Twitter,
+  Youtube,
+  Stetoscop,
+  HospitalExample,
+};
