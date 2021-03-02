@@ -1,25 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import Layout from './components/Layout/Layout';
 
-function App() {
+import BloodTest from './pages/BloodTest';
+import Laboratorium from './pages/Laboratorium';
+import Artikel from './pages/Artikel';
+import Login from './pages/Login';
+import Register from './pages/Register';
+
+import { GlobalStyle } from './styles';
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Router>
+        <GlobalStyle />
+        <Layout>
+          <Switch>
+            <Route exact path="/" component={BloodTest} />
+            <Route path="/laboratorium" component={Laboratorium} />
+            <Route path="/artikel" component={Artikel} />
+            <Route path="/register" component={Register} />
+            <Route path="/login" component={Login} />
+          </Switch>
+        </Layout>
+      </Router>
+    </>
   );
-}
+};
 
 export default App;
