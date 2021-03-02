@@ -8,6 +8,8 @@ const theme = {
     primary: '#007bff',
     teal: '#32cea4',
     gray: '#6c757d',
+    purple: '#5334F5',
+    orange: '#fd7e14',
   },
 
   fonts: {

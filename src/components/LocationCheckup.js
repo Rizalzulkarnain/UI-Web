@@ -1,5 +1,3 @@
-import * as Image from '../assets';
-
 import {
   LocationCheckupContainer,
   Select,
@@ -13,6 +11,7 @@ const LocationCheckup = () => {
       <LocationCheckupContainer>
         <div>
           <div className="title__locationChekUp">Provinsi</div>
+          <i className="fas fa-map-marker-alt icon__location"></i>
           <div>
             <Select>
               <option value="1">DKI Jakarta</option>
@@ -24,6 +23,7 @@ const LocationCheckup = () => {
         </div>
         <div>
           <div className="title__locationChekUp">Kota/Kabupaten</div>
+          <i className="fas fa-map-marked-alt icon__location"></i>
           <div>
             <Select>
               <option value="1">Jakarta Pusat</option>
@@ -35,12 +35,8 @@ const LocationCheckup = () => {
         </div>
         <div>
           <div className="title__locationChekUp">Paket & Jenis Pemeriksaan</div>
-          <img src={Image.Stetoscop} alt="img-icon-stetoscop" />
-          <input
-            type="select-one"
-            autocomplete="off"
-            placeholder="Jenis Pemeriksaan"
-          />
+          <i className="fas fa-stethoscope icon__location"></i>
+          <input type="text" placeholder="Jenis Pemeriksaan" />
         </div>
       </LocationCheckupContainer>
       <TypeOfPacket>

@@ -1,6 +1,10 @@
 import styled from 'styled-components';
 
-import theme from '../root/theme';
+import { theme } from '../root';
+
+export const HeaderMain = styled.div`
+  position: sticky;
+`;
 
 export const TopHeaderContainer = styled.div`
   font-size: ${theme.fontSizes.sm};

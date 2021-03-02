@@ -2,10 +2,6 @@ import styled from 'styled-components';
 
 import { theme, mixins } from '../root';
 
-export const HeaderMain = styled.div`
-  position: sticky;
-`;
-
 export const FooterContainer = styled.footer`
   left: 0;
   bottom: 0;

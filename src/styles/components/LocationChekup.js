@@ -10,6 +10,7 @@ export const LocationCheckupContainer = styled.div`
 
   margin-top: 1.5%;
   margin-bottom: 1.5%;
+  margin-left: 85px;
 
   .title__locationChekUp {
     font-size: ${theme.fontSizes.sm};
@@ -18,7 +19,7 @@ export const LocationCheckupContainer = styled.div`
 
   input {
     position: relative;
-    padding: 0 10px 0 35px;
+    padding: 0 0 0 35px;
     font-size: 14px;
     width: 235px;
     height: 35px;
@@ -27,23 +28,24 @@ export const LocationCheckupContainer = styled.div`
     border: 1px solid gray;
   }
 
-  img {
+  .icon__location {
     position: absolute;
-    right: 32%;
+    margin-left: 10px;
+    margin-top: 8px;
+    color: ${theme.colors.primary};
     z-index: 99;
-    top: 52%;
   }
 `;
 
 export const Select = styled.select`
-  margin-top: 3%;
-  width: 220%;
-  height: 35px;
-  background: white;
-  color: gray;
-  padding-left: 5px;
+  position: relative;
+  padding: 0 0 0 35px;
   font-size: 14px;
+  width: 235px;
+  height: 35px;
+  overflow: hidden;
   border-radius: 2px;
+  border: 1px solid gray;
 
   option {
     color: black;

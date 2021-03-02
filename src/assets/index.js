@@ -4,8 +4,9 @@ import Linkedin from './img-icon-linkedin.svg';
 import Pinteres from './img-icon-pinteres.svg';
 import Twitter from './img-icon-twitter.svg';
 import Youtube from './img-icon-youtube.svg';
-import Stetoscop from './img-icon-stetoscop.svg';
 import HospitalExample from './img-hospital-example.jpg';
+import Doctor from './img-doctor.svg';
+import Star from './img-star-yellow.svg';
 
 export {
   Facebook,
@@ -14,6 +15,7 @@ export {
   Pinteres,
   Twitter,
   Youtube,
-  Stetoscop,
   HospitalExample,
+  Doctor,
+  Star,
 };

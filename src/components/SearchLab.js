@@ -39,6 +39,13 @@ const SearchLab = () => {
       <div>
         <>
           <LabCard />
+          <LabCard />
+          <LabCard />
+          <LabCard />
+          <LabCard />
+          <LabCard />
+          <LabCard />
+          <LabCard />
         </>
       </div>
     </SearchLabContainer>

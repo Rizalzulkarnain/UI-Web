@@ -12,7 +12,7 @@ const BloodTestPacket = () => {
       <BannerCheckUp />
       <LocationCheckup />
 
-      <hr />
+      <hr className="separate__main" />
 
       <SearchLab />
     </BloodTestPacketContainer>

@@ -1,3 +1,4 @@
+import * as Image from '../assets';
 import { BannerCheckUpContainer } from '../styles';
 
 const BannerCheckUp = () => (
@@ -9,10 +10,7 @@ const BannerCheckUp = () => (
       </div>
     </div>
     <div>
-      <img
-        src="https://www.triasse.com/static/v2/assets/img/img-doctor.svg"
-        alt="img-doctor"
-      />
+      <img src={Image.Doctor} alt="img-doctor" />
     </div>
   </BannerCheckUpContainer>
 );
