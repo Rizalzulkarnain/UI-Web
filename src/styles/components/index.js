@@ -6,3 +6,4 @@ export * from './LocationChekup';
 export * from './BloodTestPacket';
 export * from './SearchLab';
 export * from './LabCard';
+export * from './DetailLab';

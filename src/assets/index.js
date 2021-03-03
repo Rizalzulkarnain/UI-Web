@@ -7,6 +7,7 @@ import Youtube from './img-icon-youtube.svg';
 import HospitalExample from './img-hospital-example.jpg';
 import Doctor from './img-doctor.svg';
 import Star from './img-star-yellow.svg';
+import ArticleDummy from './img-article-1.jpg';
 
 export {
   Facebook,
@@ -18,4 +19,5 @@ export {
   HospitalExample,
   Doctor,
   Star,
+  ArticleDummy,
 };

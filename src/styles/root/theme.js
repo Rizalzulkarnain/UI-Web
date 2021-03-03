@@ -10,6 +10,7 @@ const theme = {
     gray: '#6c757d',
     purple: '#5334F5',
     orange: '#fd7e14',
+    softGray: '#dee2e6',
   },
 
   fonts: {

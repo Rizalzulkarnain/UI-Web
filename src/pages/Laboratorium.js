@@ -1,10 +1,11 @@
 import MetaData from '../components/MetaData';
+import DetailLab from '../components/DetailLab';
 
 const Laboratorium = () => {
   return (
     <>
       <MetaData title="Laboratorium" />
-      <h1>Laboratorium</h1>
+      <DetailLab />
     </>
   );
 };

@@ -125,8 +125,7 @@ export const PriceCard = styled.div`
   .final_discount {
     margin-top: 4px;
     font-size: ${theme.fontSizes.xl};
-    color: ${theme.colors.mainHeader};
-    font-weight: bolder;
     color: ${theme.colors.orange};
+    font-weight: bolder;
   }
 `;
