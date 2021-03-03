@@ -41,7 +41,6 @@ const BUTTON_ELEMENTS = {
     border-radius: 3px;
     padding: 10px;
     text-align: center;
-    margin-left: 1%;
     font-Size: 14px;
     width: max-content
   `,
@@ -50,7 +49,6 @@ const BUTTON_ELEMENTS = {
     border-radius: 3px;
     padding: 10px;
     text-align: center;
-    margin-left: 1%;
     font-Size: 14px;
     width: max-content
   `,

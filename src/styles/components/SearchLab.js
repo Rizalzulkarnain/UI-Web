@@ -1,12 +1,18 @@
 import styled from 'styled-components';
 
-import { theme, mixins } from '../root';
+import { theme, mixins, below } from '../root';
 
 export const SearchLabContainer = styled.div`
+  justify-content: center;
+  margin-right: 15%;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 330px));
-  margin-left: 15%;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 365px));
   margin-top: 5%;
+
+  ${below.tablet`
+    margin-left: auto;
+    margin-right: auto;
+  `}
 
   .filter__title {
     font-weight: 700;
@@ -22,8 +28,7 @@ export const SearchLabContainer = styled.div`
 
     .seperate__filter {
       border: solid 1px ${theme.colors.gray};
-      width: 190%;
-      margin: 25px 0px 25px -15px;
+      width: 100%;
     }
   }
 

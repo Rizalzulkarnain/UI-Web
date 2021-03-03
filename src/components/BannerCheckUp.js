@@ -9,7 +9,7 @@ const BannerCheckUp = () => (
         Lorem ipsum dolor sit amet consectetur adipisicing elit.
       </div>
     </div>
-    <div>
+    <div className="image__banner__doctor">
       <img src={Image.Doctor} alt="img-doctor" />
     </div>
   </BannerCheckUpContainer>

@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-import { theme, mixins } from '../root';
+import { theme, mixins, below } from '../root';
 
 export const DetailLabContainer = styled.div`
   display: grid;
@@ -9,6 +9,11 @@ export const DetailLabContainer = styled.div`
   grid-gap: 10%;
   max-width: 900px;
   margin: 0 auto;
+
+  ${below.tablet`
+    display: flex;
+    flex-direction: column;
+  `}
 
   .description__laboratory {
     margin: 8% 0;
@@ -54,6 +59,11 @@ export const DetailLabContainer = styled.div`
     height: fit-content;
     padding: 5%;
     text-align: start;
+
+    ${below.tablet`
+      margin: 0 auto;
+      margin-bottom: 60px;
+    `}
 
     .title__price__packet {
       font-size: ${theme.fontSizes.base};

@@ -7,12 +7,11 @@ export const GlobalStyle = createGlobalStyle`
   ${normalize}
   * {
     box-sizing: border-box;
+    margin: 0;
   }
 
   body {
-    box-sizing: border-box;
-    margin: 0 auto;
-    padding: 0;
+    width: 100%;
     font-family: "Inv Maison Neue","Maison Neue",-apple-system,BlinkMacSystemFont,"Open Sans",open-sans,sans-serif;
     background-color: ${theme.colors.white};
     font-size: 1rem;

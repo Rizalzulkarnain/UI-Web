@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-import { theme, mixins } from '../root';
+import { theme, mixins, below } from '../root';
 
 export const FooterContainer = styled.footer`
   left: 0;
@@ -18,13 +18,27 @@ export const EmailSubcription = styled.div`
   justify-content: center;
   grid-template-columns: 1fr 1fr;
 
+  ${below.tablet`
+    display: flex;
+    flex-direction: column;
+  `}
+
   .text__newsletter {
     font-size: ${theme.colors.md};
     margin: auto;
+
+    ${below.tablet`
+      text-align: center;
+      margin: 0;
+    `}
   }
 
   .form__newsletter {
     padding-right: 15%;
+
+    ${below.tablet`
+      padding-right: 25%;
+    `}
   }
 
   input {

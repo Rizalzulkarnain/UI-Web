@@ -7,3 +7,5 @@ export * from './BloodTestPacket';
 export * from './SearchLab';
 export * from './LabCard';
 export * from './DetailLab';
+export * from './NavLink';
+export * from './NavDrawer';

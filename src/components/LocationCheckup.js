@@ -1,4 +1,5 @@
 import {
+  WrapperLocationCheckup,
   LocationCheckupContainer,
   Select,
   TypeOfPacket,
@@ -7,12 +8,12 @@ import {
 
 const LocationCheckup = () => {
   return (
-    <>
+    <WrapperLocationCheckup>
       <LocationCheckupContainer>
         <div>
           <div className="title__locationChekUp">Provinsi</div>
-          <i className="fas fa-map-marker-alt icon__location"></i>
-          <div>
+          <div className="wrapper__input__select__locationChekUp">
+            <i className="fas fa-map-marker-alt icon__location"></i>
             <Select>
               <option value="1">DKI Jakarta</option>
               <option value="2">Jawa Timur</option>
@@ -23,8 +24,8 @@ const LocationCheckup = () => {
         </div>
         <div>
           <div className="title__locationChekUp">Kota/Kabupaten</div>
-          <i className="fas fa-map-marked-alt icon__location"></i>
-          <div>
+          <div className="wrapper__input__select__locationChekUp">
+            <i className="fas fa-map-marked-alt icon__location"></i>
             <Select>
               <option value="1">Jakarta Pusat</option>
               <option value="2">Bandung</option>
@@ -35,12 +36,14 @@ const LocationCheckup = () => {
         </div>
         <div>
           <div className="title__locationChekUp">Paket & Jenis Pemeriksaan</div>
-          <i className="fas fa-stethoscope icon__location"></i>
-          <input type="text" placeholder="Jenis Pemeriksaan" />
+          <div className="wrapper__input__select__locationChekUp">
+            <i className="fas fa-stethoscope icon__location"></i>
+            <input type="text" placeholder="Jenis Pemeriksaan" />
+          </div>
         </div>
       </LocationCheckupContainer>
       <TypeOfPacket>
-        <div>
+        <div className="button__typeOfPacket__container">
           <Button modifiers="bloodPacket">
             Paket Skrinning Diabetes Melitus{' '}
             <i
@@ -49,7 +52,7 @@ const LocationCheckup = () => {
             ></i>
           </Button>
         </div>
-        <div>
+        <div className="button__typeOfPacket__container">
           <Button modifiers="bloodPacket">
             Glukosa Puasa*{' '}
             <i
@@ -58,7 +61,7 @@ const LocationCheckup = () => {
             ></i>
           </Button>
         </div>
-        <div>
+        <div className="button__typeOfPacket__container">
           <Button modifiers="bloodPacket">
             Cholesterol(Kolesterol) Total*{' '}
             <i
@@ -69,7 +72,7 @@ const LocationCheckup = () => {
         </div>
       </TypeOfPacket>
       <TypeOfPacket>
-        <div>
+        <div className="button__typeOfPacket__container">
           <Button modifiers="bloodPacket">
             Cholesterol(Kolesterol) HDL*{' '}
             <i
@@ -78,7 +81,7 @@ const LocationCheckup = () => {
             ></i>
           </Button>
         </div>
-        <div>
+        <div className="button__typeOfPacket__container">
           <Button modifiers="bloodPacket">
             Insulin*{' '}
             <i
@@ -87,7 +90,7 @@ const LocationCheckup = () => {
             ></i>
           </Button>
         </div>
-        <div>
+        <div className="button__typeOfPacket__container">
           <Button modifiers="bloodPacket">
             Pap Smear*{' '}
             <i
@@ -96,16 +99,16 @@ const LocationCheckup = () => {
             ></i>
           </Button>
         </div>
-        <div>
+        <div className="button__typeOfPacket__container">
           <Button modifiers="disabled" disabled>
             Hapus Semua
           </Button>
         </div>
-        <div>
+        <div className="button__typeOfPacket__container">
           <Button modifiers="cariLabButton">Cari Lab</Button>
         </div>
       </TypeOfPacket>
-    </>
+    </WrapperLocationCheckup>
   );
 };
 

@@ -1,36 +1,29 @@
 import { css } from 'styled-components';
 
-const sizes = {
+const size = {
   desktopXL: 1440,
   desktop: 1000,
-  tablet: 768,
+  tablet: 800,
   phablet: 600,
   phoneXL: 480,
   phone: 400,
   tinyPhone: 330,
 };
 
-// iterate through the sizes and create a media template
-export const mediaMax = Object.keys(sizes).reduce((accumulator, label) => {
-  // use em in breakpoints to work properly cross-browser and support users
-  // changing their browsers font-size: https://zellwk.com/blog/media-query-units/
-  const emSize = sizes[label] / 16;
-  accumulator[label] = (...args) => css`
-    @media (max-width: ${emSize}em) {
-      ${css(...args)};
+export const above = Object.keys(size).reduce((acc, label) => {
+  acc[label] = (...args) => css`
+    @media (min-width: ${size[label] / 16}em) {
+      ${css(...args)}
     }
   `;
-  return accumulator;
+  return acc;
 }, {});
 
-export const mediaMin = Object.keys(sizes).reduce((accumulator, label) => {
-  // use em in breakpoints to work properly cross-browser and support users
-  // changing their browsers font-size: https://zellwk.com/blog/media-query-units/
-  const emSize = sizes[label] / 16;
-  accumulator[label] = (...args) => css`
-    @media (min-width: ${emSize}em) {
-      ${css(...args)};
+export const below = Object.keys(size).reduce((acc, label) => {
+  acc[label] = (...args) => css`
+    @media (max-width: ${size[label] / 16}em) {
+      ${css(...args)}
     }
   `;
-  return accumulator;
+  return acc;
 }, {});

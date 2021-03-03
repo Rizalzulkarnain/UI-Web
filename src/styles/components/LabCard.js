@@ -1,24 +1,26 @@
 import styled from 'styled-components';
 
-import { mixins, theme } from '../root';
+import { mixins, theme, below } from '../root';
 
 export const LabCardContainer = styled.div`
   ${mixins.backgroundCard}
-
   position: relative;
   height: 165px;
   margin-bottom: 1%;
   width: 180%;
-
   margin-top: 10%;
   display: flex;
+
+  ${below.tablet`
+    right: 40%;
+  `}
 
   .seperate__card__price {
     border: 1px solid ${theme.colors.gray};
     transform: rotate(90deg);
     width: 164px;
     margin-top: 81px;
-    margin-left: 62%;
+    margin-left: 55%;
     position: absolute;
     z-index: 99;
   }
